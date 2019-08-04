@@ -12,7 +12,7 @@ width:100vw;
     left:0;
     width:100%;
     background-color:rgba(0,0,0,1.0);
-    height: 70px;
+    height: 10%;
     display:flex;
     /* justify-content: center; */
     flex-direction:row;
@@ -30,6 +30,7 @@ justify-content: space-between
     background-color: white;
 float:left;
 }
+
 .nav-ul{
     position:relative;
     display:flex;
@@ -38,9 +39,9 @@ float:left;
     height:50px;
     right:3%;
 }
+
 .nav-option {
     position:relative;
-
     height:100%;
     color:darkgreen;
     margin:2%;
@@ -54,22 +55,42 @@ float:left;
 
 .projects-container {
     position:relative;
-    top:70px;
-    left: -40px;
+    top:100px;
+    /* left: -40px; */
+    height: 70%;
+    width:30%;
+    display:grid;
+    place-items: center;
 }
 
 .project-wrap {
     background-color:rgb(0,0,0,0.3);
     height:50%;
-    width:30%;
+    width:50%;
     display:flex;
-   border-radius:50%;
+    flex-wrap: wrap;
+    border-radius:50%;
     justify-content:center;
     align-content:center;
+    padding: 2rem;
+    box-shadow: 2px 5px black;
     border:1px solid white;
+    transition:0.2s;
     
   }
-  
+.project-wrap:not(:first-child) {
+      margin-top:-4rem
+  }
+
+.project-wrap:hover {
+transform: translateX(1.5rem);
+
+}
+.project-wrap:hover ~.project-wrap {
+   transform:translateY(3rem);
+transform:translateX(-1rem);
+}  
+
   .outer-layer {
     display:flex;
     opacity:1.0;

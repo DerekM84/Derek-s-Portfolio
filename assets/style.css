@@ -1,7 +1,8 @@
 .body {
-    background-color:slateblue;
+    background-color:black;
     background-image: url("./images/nightlights1.jpeg");
     background-size:cover;
+    background-repeat:no-repeat;
 }
 
 .navbar-wrap {
@@ -10,32 +11,26 @@
     left:0;
     width:100%;
 
-    background:linear-gradient(rgba(255,255,255,0.8) 10%, transparent 25%,black 50%,transparent 75%);
+    background:linear-gradient(rgba(255,255,255,0.8) 13%, transparent 25%,black 30%,transparent 85%);
     height: 10%;
     display: flex;
     flex-direction:row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     z-index:10;
 }
 
+.logo {
+    color:snow;
+    float:right;
+    align-items: center;
+
+}
 .logo-image {
     position:relative;
     float:left;
-    height:80px;
-    width:80px;
-}
-.logo {
-    color:black;
-    float:left;
-    background-color:transparent;
-    align-items: center;
-
-}
-
-.social-media-wrap {
-    background-color: transparent;
-    float:left;
-    align-items: center;
+    height:50px;
+    width:85px;
+    background-color:rgba(255,255,255,0.3);
 }
 
 .nav-ul{
@@ -46,13 +41,66 @@
     height:50px;
     right:3%;
     align-items: center;
+
 }
+
+.social-media-wrap {
+    display:flex;
+    justify-content: space-between;
+    width:20%;
+    transition: 0.5s;
+    float:right;
+}
+
+
 .social-media-wrap img {
     height:35px;
     width:35px;
     border-radius:50%;
-    background-color:rgba(255,255,255,0.5);
+border:1px solid rgba(255,255,255,0.6)
 }
+
+.social-media-wrap a{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height:90px;
+    transform:translateY(-50px);
+    background:rgba(255,255,255,0.5);
+    border-bottom-left-radius:50%;
+    border-bottom-right-radius:50%;
+}
+
+
+.social-media-wrap a:hover {
+    transform: translateY(-30px);
+    border-bottom-left-radius:50%;
+    border-bottom-right-radius:50%;
+    transition: all 0.5s;
+}
+
+.social-media-wrap a.facebook:hover {
+background:radial-gradient(circle at 50%,rgba(59, 89, 152, 1.0) 15%, snow);
+}  
+.social-media-wrap a.linkedin:hover {
+background: radial-gradient(circle at 50%, rgba(0,119,181,1.0) 15%, snow );
+} 
+.social-media-wrap a.github:hover {
+ background:radial-gradient(circle at 50%,rgba(244, 203, 178, 1.0) 15%, snow);
+} 
+            
+.social-media-wrap a.instagram:hover {
+background:radial-gradient(circle at 50%,rgba(195, 42, 163,1.0) 15%, snow);
+} 
+                
+.social-media-wrap a.something:hover {
+background:radial-gradient(circle at 50%,rgba(59, 89, 152, 1.0) 15%, snow);
+
+} 
+
+
+
+
 .nav-option {
     position:relative;
     height:100%;
@@ -63,10 +111,10 @@
 
 .projects-container {
     position: relative;
-    background: linear-gradient(to right,slateblue 2%, transparent 10%,black 15%,transparent 25%);
+    background: linear-gradient(to right,snow 1%, transparent 10%,black 15%,transparent 25%);
     padding-top: 50px;
     left: -10px;
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     place-items: center;
@@ -74,7 +122,7 @@
 }
 
 .project-wrap {
-    background-color:rgb(0,0,0,0.2);
+    background-color:rgb(0,0,0,0.1);
     height:50%;
     width:50%;
     display:flex;
@@ -83,7 +131,7 @@
     justify-content:center;
 place-content: left;
     padding: 2rem;
-    box-shadow: 2px 2px lightblue;
+    border-left: 2px solid lightblue;
     transition:0.2s;
 }
 
@@ -176,7 +224,7 @@ place-content: left;
   }
 .display {
     display:flex;
-   border:1px solid white;
+    border:1px solid white;
     padding-top:20px;
     width:90%;
     height:95%;

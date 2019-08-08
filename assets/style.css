@@ -10,7 +10,7 @@
     top:0;
     left:0;
     width:100%;
-    background:linear-gradient(rgba(255,255,255,0.8) 13%, transparent 25%,black 30%,transparent 85%);
+    background:linear-gradient(rgba(255,255,255,0.8) 10%, transparent 20%,rgba(22,46,70,1.0) 28%,black 35%,transparent 85%);
     height: 10%;
     display: flex;
     flex-direction:row;
@@ -46,6 +46,10 @@
 }
 .nav-ul li {
     display:flex;
+    text-align:center;
+justify-content: center;
+align-content: center;
+align-items:center;
 }
 
 .nav-option {
@@ -53,15 +57,22 @@
     position:relative;
     height:100%;
     color: rgb(203,151,98);
+    width:24%;
     margin:2%;
     background-color:transparent;
     text-align:center;
-    align-items:center;
+    align-items:stretch;
+    border-left:1px solid black;
+    border-right:1px solid black;
+    border-bottom:1px solid black;
+transition: 0.6s;
+    
 
 }
 .nav-option:hover {
     border:1px dotted rgba(22,46,70,1.0);
     color:rgba(158,92,62,1.0);
+    border-radius:5px;
     /* background: rgba(255,255,255,0.5); */
     /* background:radial-gradient(circle at 50%, rgba(255,255,255,0.2)10%, transparent 50%); */
 }
@@ -142,7 +153,7 @@ background:radial-gradient(circle at 50%,rgba(59, 89, 152, 1.0) 15%, snow);
 
 .projects-container {
     position: relative;
-    background: linear-gradient(to right,snow 1%, transparent 4%,black 15%,transparent 25%);
+    background: linear-gradient(to right,snow 1%, transparent 4%,rgba(22,46,70,1.0) 6%, black 9%,transparent 25%);
     padding-top: 50px;
     left: -10px;
     height: 100%;
@@ -165,7 +176,7 @@ background:radial-gradient(circle at 50%,rgba(59, 89, 152, 1.0) 15%, snow);
     place-content:left;
     padding: 1.8rem;
     border-left: 2px solid rgba(22,46,70,1.0);
-    transition:0.2s;
+    transition:0.3s;
 }
 
 .project-wrap:not(:first-child) {
@@ -179,10 +190,7 @@ background:radial-gradient(circle at 50%,rgba(59, 89, 152, 1.0) 15%, snow);
 .project-wrap:hover {
     transform: translateX(1.5rem);
     border:1px solid rgba(22,46,70,1.0);
-
     background: radial-gradient(circle at 15%, black 55%, transparent 90%);
-
-
     align-content:left;
     width:85%;
     height:60%;
@@ -204,7 +212,7 @@ background:radial-gradient(circle at 50%,rgba(59, 89, 152, 1.0) 15%, snow);
     width:70%;
     background-color:rgb(0,0,0,0.5);
     align-content:center;
-    border: 1px solid white;
+    border-right: 1px solid rgba(22,46,70,1.0);
   }
 .project-wrap:hover .outer-layer {
 height:98%;
@@ -224,12 +232,18 @@ background: radial-gradient(circle at 10%, rgba(255,255,255,0.7) 20%, rgba(102,6
       width:65%;
       justify-content:center;
       align-content:center;
-      background-image: url("https://img1.picmix.com/output/stamp/normal/9/1/0/5/865019_ac821.gif");
-      background-size:80%;
-      border: 1px solid white
+      /* /* background-image: url("https://img1.picmix.com/output/stamp/normal/9/1/0/5/865019_ac821.gif"); */
+      background-image:url("./images/adjustedspeedspiral.gif");
+      background-size:100%;
+      border: 1px solid white;
     }
     
     .project-wrap:hover .inner-layer {
+        justify-content:left;
+        align-content:left;
+        background-size:100%;
+        border:2px solid rgba(22,46,70,1.0);
+
 
     }
     .thumbnail{
@@ -239,6 +253,9 @@ background: radial-gradient(circle at 10%, rgba(255,255,255,0.7) 20%, rgba(102,6
         width:90%;
         border-radius:50%;
         border:1px solid white;
+    }
+    .project-wrap:hover .thumbnail {
+        border:3px solid rgba(22,46,70,1.0);
     }
     
 .project-text {
@@ -265,39 +282,54 @@ background: radial-gradient(circle at 10%, rgba(255,255,255,0.7) 20%, rgba(102,6
     align-items: center;
     width:100%;
     height:100%;
+    margin-top: 7%;
+
   }
 
 .display-wrap {
     position: relative;
     display: flex;
+    flex-direction: column;
     margin: auto;
     height: 100%;
-    width: 55%;
-    background-color:rgba(0,0,0,0.2);
+    width: 58%;
+    background: linear-gradient(to right,rgb(225,225,225) 1%, transparent 4%,rgba(22,46,70,1.0) 6%, black 9%,transparent 25%, rgba(22,46,70,1.0) 75%, black 91%,transparent 96%, rgb(255,255,255) 99%) ;
     border-radius: 10px;
-    padding-top: 50px;
-    margin-top: 5%;
     align-content: center;
     justify-content: center;
     border:1px solid rgba(22,46,70,1.0);
-    
+    transition:0.7s;
+  }
+  
+  .display-wrap .section-title {
+      display:flex;
+      justify-content: flex-start;
+  width:100%;
+  color: rgba(255,255,255,0.7);
+  transition: 0.7s;
+  height:2%;
   }
 
 .display {
     position:relative;
     display: flex;
+    flex-direction: column;
     border:1px solid white;
-    padding-top: 20px;
-    width: 90%;
-    height: 95%;
+    margin:auto;
+    padding-top:0px;
+    width: 95%;
+    height: 98%;
     min-height: 480px;
     background-color: rgba(0,0,0,0.8);
     transition:0.5s;
 }
-.display:hover {
+.display-wrap:hover .section-title {
+    opacity:0;
+}
+.display-wrap:hover .display {
     padding-top:10px;
-    width:92%;
-    height:98%;
+    width:100%;
+    height:99%;
 }
                 
                      

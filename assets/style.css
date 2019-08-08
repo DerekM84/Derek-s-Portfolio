@@ -1,6 +1,6 @@
 .body {
     background-color:black;
-    background-image: url("./images/nightlights1.jpeg");
+    background-image: url("./images/potential-background1.jpeg");
     background-size:cover;
     background-repeat:no-repeat;
 }
@@ -10,13 +10,14 @@
     top:0;
     left:0;
     width:100%;
-
     background:linear-gradient(rgba(255,255,255,0.8) 13%, transparent 25%,black 30%,transparent 85%);
     height: 10%;
     display: flex;
     flex-direction:row;
     justify-content: space-evenly;
     z-index:10;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
 }
 
 .logo {
@@ -41,7 +42,28 @@
     height:50px;
     right:3%;
     align-items: center;
+    
+}
+.nav-ul li {
+    display:flex;
+}
 
+.nav-option {
+    display:flex;
+    position:relative;
+    height:100%;
+    color: rgb(203,151,98);
+    margin:2%;
+    background-color:transparent;
+    text-align:center;
+    align-items:center;
+
+}
+.nav-option:hover {
+    border:1px dotted rgba(22,46,70,1.0);
+    color:rgba(158,92,62,1.0);
+    /* background: rgba(255,255,255,0.5); */
+    /* background:radial-gradient(circle at 50%, rgba(255,255,255,0.2)10%, transparent 50%); */
 }
 
 .social-media-wrap {
@@ -57,7 +79,7 @@
     height:35px;
     width:35px;
     border-radius:50%;
-border:1px solid rgba(255,255,255,0.6)
+    border:1px solid rgba(255,255,255,0.6);
 }
 
 .social-media-wrap a{
@@ -99,17 +121,10 @@ background:radial-gradient(circle at 50%,rgba(59, 89, 152, 1.0) 15%, snow);
 
 
 
-.nav-option {
-    position:relative;
-    height:100%;
-    color: rgb(163, 163, 220);
-    margin:2%;
-    background-color:transparent;
-}
 
 .projects-container {
     position: relative;
-    background: linear-gradient(to right,snow 1%, transparent 10%,black 15%,transparent 25%);
+    background: linear-gradient(to right,snow 1%, transparent 4%,black 15%,transparent 25%);
     padding-top: 50px;
     left: -10px;
     height: 100%;
@@ -117,6 +132,8 @@ background:radial-gradient(circle at 50%,rgba(59, 89, 152, 1.0) 15%, snow);
     flex-direction: column;
     place-items: center;
     width: 30%;
+    border-bottom-left-radius: 25%;
+    border-top-left-radius:25%;
 }
 
 .project-wrap {
@@ -127,9 +144,9 @@ background:radial-gradient(circle at 50%,rgba(59, 89, 152, 1.0) 15%, snow);
     flex-wrap: wrap;
     border-radius:50%;
     justify-content:center;
-place-content: left;
+    place-content:left;
     padding: 2rem;
-    border-left: 2px solid lightblue;
+    border-left: 2px solid rgba(22,46,70,1.0);
     transition:0.2s;
 }
 
@@ -143,15 +160,14 @@ place-content: left;
 
 .project-wrap:hover {
     transform: translateX(1.5rem);
-    border:1px solid white;
+    border:1px solid rgba(22,46,70,1.0);
     background-color:rgba(0,0,0,0.7);
     align-content:left;
     width:80%;
     height:60%;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-radius:15%;
     place-content:left;
-    box-shadow: 2px 4px lightblue;
+    box-shadow: 2px 4px rgba(22,46,70,1.0);
 
 }
 
@@ -201,6 +217,7 @@ place-content: left;
 .main-display-area {
     display:flex;
     flex-wrap:wrap;
+    align-items: center;
     width:100%;
     height:100%;
   }
@@ -210,27 +227,32 @@ place-content: left;
     display: flex;
     margin: auto;
     height: 100%;
-    width: 60%;
+    width: 55%;
     background-color:rgba(0,0,0,0.2);
     border-radius: 10px;
     padding-top: 50px;
     margin-top: 5%;
     align-content: center;
     justify-content: center;
+    border:1px solid rgba(22,46,70,1.0);
+    
   }
 
 .display {
-
     position:relative;
     display: flex;
     border:1px solid white;
     padding-top: 20px;
     width: 90%;
     height: 95%;
+    min-height: 480px;
     background-color: rgba(0,0,0,0.8);
-
-
-
+    transition:0.5s;
+}
+.display:hover {
+    padding-top:10px;
+    width:92%;
+    height:98%;
 }
                 
                      

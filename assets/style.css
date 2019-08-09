@@ -7,15 +7,15 @@
 
 .navbar-wrap {
     position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    background:linear-gradient(rgba(255,255,255,0.8) 10%, transparent 20%,rgba(22,46,70,1.0) 28%,black 35%,transparent 85%);
-    height: 10%;
+    z-index:10;
     display: flex;
     flex-direction:row;
     justify-content: space-evenly;
-    z-index:10;
+    height: 10%;
+    width:100%;
+    top:0;
+    left:0;
+    background:linear-gradient(rgba(255,255,255,0.8) 10%, transparent 20%,rgba(22,46,70,1.0) 28%,black 35%,transparent 85%);
     border-top-left-radius: 15%;
     border-top-right-radius: 15%;
 }
@@ -24,58 +24,83 @@
     color:snow;
     float:right;
     align-items: center;
+    margin-top:20px;
+    transform: translateX(-100px);
+
 
 }
 .logo-image {
     position:relative;
     float:left;
-    height:50px;
+    height:75px;
     width:85px;
-    background-color:rgba(255,255,255,0.3);
+
+
 }
 
 .nav-ul{
     position:relative;
     display:flex;
-    flex-direction: row;
-    list-style:none;
-    height:50px;
-    right:3%;
     align-items: center;
-    
-}
-.nav-ul li {
-    display:flex;
-    text-align:center;
-justify-content: center;
-align-content: center;
-align-items:center;
+    justify-content: space-between;
+    list-style:none;
+    height:100%;
+    font-size:1rem;
 }
 
 .nav-option {
-    display:flex;
     position:relative;
-    height:100%;
+    display:flex;
+    justify-content: center;
+    text-align:center;
+    align-items: center;
+    min-height:100%;
     color: rgb(203,151,98);
-    width:24%;
-    margin:2%;
+    width:23%;
+    margin:3%;
     background-color:transparent;
     text-align:center;
-    align-items:stretch;
-    border-left:1px solid black;
-    border-right:1px solid black;
-    border-bottom:1px solid black;
-transition: 0.6s;
-    
+    align-items:center;
+    border: 1px solid transparent;
+    transition: 0.6s;
 
 }
+
 .nav-option:hover {
-    border:1px dotted rgba(22,46,70,1.0);
+    border: 1px dotted rgba(22,46,70,1.0);
     color:rgba(158,92,62,1.0);
     border-radius:5px;
-    /* background: rgba(255,255,255,0.5); */
-    /* background:radial-gradient(circle at 50%, rgba(255,255,255,0.2)10%, transparent 50%); */
+    display:block;
+
+
 }
+
+.nav-ul li ul {
+    list-style: none;
+    display:none;
+    height:100%;
+    width:100%;
+    transition:0.3s;
+
+}
+.nav-ul li:hover ul {
+    display:flex;
+    text-align:center;
+    align-items: center;
+}
+
+.nav-ul li:hover ul li {
+    position:absolute;
+    width:23%;
+    height:100%;
+    display:flex;
+    background-color: rgba(22,46,70,1.0);
+    justify-content: flex-start;
+    text-align: center;
+    align-items: center;
+    
+}
+
 
 .social-media-wrap {
     display:flex;
@@ -83,6 +108,7 @@ transition: 0.6s;
     width:15%;
     transition: 0.5s;
     float:right;
+    transform: translateX(145px);
 }
 
 
@@ -99,7 +125,7 @@ transition: 0.6s;
     justify-content: flex-end;
     height:60px;
     transform:translateY(-15px);
-    background:rgba(255,255,255,0.4);
+    background:rgba(255,255,255, 0.3);
     border-bottom-left-radius:50%;
     border-bottom-right-radius:50%;
     transition: all 0.2s;
@@ -147,7 +173,11 @@ background:radial-gradient(circle at 50%,rgba(59, 89, 152, 1.0) 15%, snow);
 .div-thing {
     max-height:150px;
     max-width:150px;
-    transform:translateX(-25px);
+
+
+    transform:translateY(-30px);
+    left:-50px;
+
 }
 
 
@@ -157,12 +187,15 @@ background:radial-gradient(circle at 50%,rgba(59, 89, 152, 1.0) 15%, snow);
     padding-top: 50px;
     left: -10px;
     height: 100%;
+    min-height:660px;
     display: flex;
     flex-direction: column;
     place-items: center;
     width: 30%;
     border-bottom-left-radius: 25%;
     border-top-left-radius:25%;
+    /* border-bottom:1px solid rgba(22,46,70,1.0);
+    border-top:1px solid rgba(22,46,70,1.0); */
 }
 
 .project-wrap {
@@ -177,6 +210,10 @@ background:radial-gradient(circle at 50%,rgba(59, 89, 152, 1.0) 15%, snow);
     padding: 1.8rem;
     border-left: 2px solid rgba(22,46,70,1.0);
     transition:0.3s;
+}
+.project-wrap a{
+    height:100%;
+    width:100%;
 }
 
 .project-wrap:not(:first-child) {
@@ -208,8 +245,8 @@ background:radial-gradient(circle at 50%,rgba(59, 89, 152, 1.0) 15%, snow);
 .outer-layer {
     display:flex;
     border-radius:50%;
-    height:70%;
-    width:70%;
+    height:75%;
+    width:85%;
     background-color:rgb(0,0,0,0.5);
     align-content:center;
     border-right: 1px solid rgba(22,46,70,1.0);
@@ -249,13 +286,21 @@ background: radial-gradient(circle at 10%, rgba(255,255,255,0.7) 20%, rgba(102,6
     .thumbnail{
         justify-content:center;
         align-content:center;
-        height:85%;;
+        align-items:center;
+        height:85%;
         width:90%;
         border-radius:50%;
         border:1px solid white;
+        min-height:50px;
+        max-height:60px;
+        max-width:100px;
     }
     .project-wrap:hover .thumbnail {
         border:3px solid rgba(22,46,70,1.0);
+        min-height:85%;
+        min-width:90%;
+        max-height: 300px;
+        max-height:300px;
     }
     
 .project-text {
@@ -282,7 +327,7 @@ background: radial-gradient(circle at 10%, rgba(255,255,255,0.7) 20%, rgba(102,6
     align-items: center;
     width:100%;
     height:100%;
-    margin-top: 7%;
+    margin-top: 5%;
 
   }
 
@@ -332,4 +377,8 @@ background: radial-gradient(circle at 10%, rgba(255,255,255,0.7) 20%, rgba(102,6
     height:99%;
 }
                 
+.project-details{
+    background-color:white;
+    color:white;
+}
                      

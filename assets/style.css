@@ -315,6 +315,13 @@ background: radial-gradient(circle at 10%, rgba(255,255,255,0.7) 20%, rgba(102,6
     justify-content: center;
     align-content:center;
     text-align: center;
+    
+}
+.project-wrap:hover .project-h2 {
+    font-family: 'Kelly Slab', cursive;
+    background: -webkit-linear-gradient(rgba(22,46,70,1.0) 10%, snow 40%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .inner-layer h2 {
     color:white;
@@ -376,9 +383,31 @@ background: radial-gradient(circle at 10%, rgba(255,255,255,0.7) 20%, rgba(102,6
     width:100%;
     height:99%;
 }
-                
-.project-details{
-    background-color:white;
-    color:white;
+              
+.project-details {
+    display:flex;
+    width:95%;
+    height:98%;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
 }
-                     
+.h2 {
+    
+    font-family: 'Gabriela', serif;
+
+    color:white;
+    font-size:2.5rem;
+    background: -webkit-linear-gradient(rgba(22,46,70,1.0) 10%, snow 30%, rgba(22,46,70,1.0) 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+                    
+.p {
+    font-family: 'Kelly Slab', cursive;
+font-size:1.5rem;
+/* color:linear-gradient(to right, rgba(102,67,52,1.0) 30%, rgb(203,151,98) 70%); */
+background: -webkit-linear-gradient(rgb(203,151,98)  20%, rgba(102,67,52,1.0) 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

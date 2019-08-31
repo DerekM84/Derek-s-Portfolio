@@ -11,7 +11,7 @@ $(".project-wrap").on("mouseenter", function() {
     h2.text($(this).attr("data-title"));
     var p = $("<p>").addClass("project-details p");
     p.text($(this).attr("data-about"));
-    $(".display").append(h2, p);
+    $(".display").append(h2,p);
 
 })
 

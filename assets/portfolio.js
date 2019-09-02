@@ -6,7 +6,7 @@ $(document).ready(function() {
 
 $(".project-wrap").on("mouseenter", function() {
     console.log("hovering on project: " + $(this).attr("data-title"));
-    // $(".display").empty();
+    $(".display").empty();
     var h2 = $("<h2>").addClass("project-details h2");
     h2.text($(this).attr("data-title"));
     var p = $("<p>").addClass("project-details p");

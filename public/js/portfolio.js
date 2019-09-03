@@ -1,9 +1,5 @@
 console.log("javascript file linked");
 
-$(document).ready(function() {
-    
-    console.log("document loaded");
-
 $(".project-wrap").on("mouseenter", function() {
     console.log("hovering on project: " + $(this).attr("data-title"));
     $(".display").empty();
@@ -13,13 +9,14 @@ $(".project-wrap").on("mouseenter", function() {
     p.text($(this).attr("data-about"));
     $(".display").append(h2,p);
 
-})
+});
 
 $(".project-wrap").on("mouseleave", function() {
     console.log("mouse left: " + $(this).attr("data-title"));
     $(".display").empty();
-})
+});
 
 
 
-})
+
+

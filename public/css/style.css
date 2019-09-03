@@ -1,4 +1,4 @@
-.body {
+body {
     background-color: black;
     background-image: url("./images/potential-background1.jpeg");
     background-size: cover;
@@ -373,6 +373,7 @@ align-items:center;
     font-size:2.5rem;
     background: -webkit-linear-gradient(rgba(22,46,70,1.0) 10%, snow 30%, rgba(22,46,70,1.0) 90%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
                     
@@ -382,5 +383,6 @@ font-size:1.5rem;
 /* color:linear-gradient(to right, rgba(102,67,52,1.0) 30%, rgb(203,151,98) 70%); */
 background: -webkit-linear-gradient(rgb(203,151,98)  20%, rgba(102,67,52,1.0) 80%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
+-webkit-text-fill-color: transparent;
 }

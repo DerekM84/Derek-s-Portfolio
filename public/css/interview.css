@@ -1,0 +1,10 @@
+.interview-wrap {
+display:flex;
+flex-direction: column;
+text-align:center;
+align-items: center;
+height: 85%;
+margin-top:15%;
+background-color: rgba(22,46,70,1.0);
+color:snow;
+}

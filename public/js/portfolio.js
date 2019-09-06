@@ -14,6 +14,13 @@ $(".project-wrap").on("mouseenter", function() {
 $(".project-wrap").on("mouseleave", function() {
     console.log("mouse left: " + $(this).attr("data-title"));
     $(".display").empty();
+
+        var hover = $("<h3>").addClass("").text("-- Hover over a project for more details --");
+
+        var br = $("<br>");
+
+        var click = $("<h3>").addClass("").text("-- Click on a project tile to open in a new window");
+    // location.reload();
 });
 
 

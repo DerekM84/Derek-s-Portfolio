@@ -1,13 +1,18 @@
 .interview-wrap {
 display:flex;
 flex-direction: column;
-text-align:center;
-align-items: center;
+justify-content: left;
+text-align:left;
+/* align-items: center; */
 height: 85%;
 background-color: rgba(22,46,70,1.0);
 color:snow;
 border-top: 2px solid rgb(203,151,98);
 border-bottom: 2px solid rgb(203,151,98);
+}
+.interview-wrap:hover {
+border-top: 2px solid rgba(158,92,62,1.0);
+border-bottom: 2px solid rgba(158,92,62,1.0);
 }
 
 
@@ -17,34 +22,70 @@ border-bottom: 2px solid rgb(203,151,98);
     width:80%;
     font-family:'Quicksand' ,sans-serif;
     color: rgb(203,151,98);
-    font-size:1.2rem;
+    font-size:1.1rem;
     transition:1.5s;
 }
+
 .page-title-wrap:hover {
     color:rgba(158,92,62,1.0);
     border-radius:8px;
 }
+
 .question-wrap {
     margin: auto;
     width: 80%;
+    transition:1s;
 }
 
 .interviewer {
 text-align:left;
 color: rgb(203,151,98);
-font-size:1.5rem;
+font-size:1.7rem;
 font-family:'Quicksand' ,sans-serif;
 transition: 0.7s;
-
 }
-.question-wrap:hover .interviewer {
+.greeting-link {
+    color: rgb(216, 173, 129);
+    font-size:1.7rem;
+    font-family:'Quicksand' ,sans-serif;
+    transition: 0.7s;
+    text-decoration: underline;
+}
+/* .question-wrap:hover  */
+
+.checkbox{
+display:none;
+}
+
+.interviewer:hover {
     color:rgba(158,92,62,1.0);
     border-radius:8px;
 }
 
 .me {
+display:none;
 text-align: left;
 color:snow;
 font-size:1.1rem;
-font-family:'Quicksand' ,sans-serif;
+font-family:'Quicksand' sans-serif;
+transition:1s;
+}
+
+#toggle-1:checked ~ .me{
+    display:flex;
+}
+#toggle-2:checked ~ .me{
+    display:flex;
+}
+
+#toggle-3:checked ~ .me{
+    display:flex;
+}
+
+#toggle-4:checked ~ .me{
+    display:flex;
+}
+
+#toggle-5:checked ~ .me{
+    display:flex;
 }

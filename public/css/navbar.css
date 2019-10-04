@@ -27,8 +27,8 @@ a {
 
 .logo h3 {
     font-family:'Quicksand' ,sans-serif;
-    font-size:1.8rem;
-    background: -webkit-linear-gradient(rgba(22,46,70,1.0) 20%, snow 40%, rgba(22,46,70,1.0) 80%);
+    font-size:1.5rem;
+    background: -webkit-linear-gradient(rgba(22,46,70,1.0) 15%, snow 40%, rgba(22,46,70,1.0) 85%);
     background-clip:text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -76,7 +76,7 @@ a {
 .social-media-wrap {
     display:flex;
     flex-direction:row;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     width:25%;
     transition: 0.5s;
     transform: translateY(-40px);

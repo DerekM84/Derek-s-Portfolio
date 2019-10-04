@@ -26,7 +26,7 @@ a {
 }
 
 .logo h3 {
-    font-family:cursive;
+    font-family:'Quicksand' ,sans-serif;
     font-size:1.8rem;
     background: -webkit-linear-gradient(rgba(22,46,70,1.0) 20%, snow 40%, rgba(22,46,70,1.0) 80%);
     background-clip:text;
@@ -59,6 +59,7 @@ a {
     height: 100% ;
     color: rgb(203,151,98);
     width: 100%;
+    font-family:'Quicksand' ,sans-serif;
 
     border: 1px solid transparent;
     transition: 0.6s;
@@ -86,6 +87,8 @@ a {
     width:35px;
     border-radius:50%;
     border:1px solid rgba(255,255,255,0.6);
+    background:rgba(255,255,255, 0.3);
+
 }
 
 .social-icon {
@@ -93,6 +96,8 @@ a {
     width:35px;
     border-radius:50%;
     border:1px solid rgba(255,255,255,0.6);
+
+
 }
 
 .social-media-wrap a{
@@ -101,7 +106,7 @@ a {
     justify-content: flex-end;
     height:100px;
     transform:translateY(-8px);
-    background:rgba(255,255,255, 0.3);
+    /* background:rgba(255,255,255, 0.3); */
     border-bottom-left-radius:50%;
     border-bottom-right-radius:50%;
     transition: all 0.2s;

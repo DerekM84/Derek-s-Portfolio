@@ -152,6 +152,7 @@ align-items:center;
     display:none;
     transition: 0.5s;
 }
+
 .project-wrap:hover .project-h2 {
     font-size:1.0rem;
     text-align:left;
@@ -168,7 +169,6 @@ align-items:center;
 .inner-layer h2 {
     color:white;
   }
-
 
 .display-wrap {
     z-index: 5;

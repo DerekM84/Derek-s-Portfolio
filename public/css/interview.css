@@ -4,7 +4,47 @@ flex-direction: column;
 text-align:center;
 align-items: center;
 height: 85%;
-margin-top:15%;
 background-color: rgba(22,46,70,1.0);
 color:snow;
+border-top: 2px solid rgb(203,151,98);
+border-bottom: 2px solid rgb(203,151,98);
+}
+
+
+.page-title-wrap {
+    margin:auto;
+    margin-top:5%;
+    width:80%;
+    font-family:'Quicksand' ,sans-serif;
+    color: rgb(203,151,98);
+    font-size:1.2rem;
+    transition:1.5s;
+}
+.page-title-wrap:hover {
+    color:rgba(158,92,62,1.0);
+    border-radius:8px;
+}
+.question-wrap {
+    margin: auto;
+    width: 80%;
+}
+
+.interviewer {
+text-align:left;
+color: rgb(203,151,98);
+font-size:1.5rem;
+font-family:'Quicksand' ,sans-serif;
+transition: 0.7s;
+
+}
+.question-wrap:hover .interviewer {
+    color:rgba(158,92,62,1.0);
+    border-radius:8px;
+}
+
+.me {
+text-align: left;
+color:snow;
+font-size:1.1rem;
+font-family:'Quicksand' ,sans-serif;
 }

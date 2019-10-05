@@ -1,91 +1,158 @@
 .interview-wrap {
-display:flex;
-flex-direction: column;
-justify-content: left;
-text-align:left;
-/* align-items: center; */
-height: 85%;
-background-color: rgba(22,46,70,1.0);
-color:snow;
-border-top: 2px solid rgb(203,151,98);
-border-bottom: 2px solid rgb(203,151,98);
-}
-.interview-wrap:hover {
-border-top: 2px solid rgba(158,92,62,1.0);
-border-bottom: 2px solid rgba(158,92,62,1.0);
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+  height: 85%;
+  background-color: rgba(22, 46, 70, 1);
+  color: snow;
+  border-top: 2px solid rgb(203, 151, 98);
+  border-bottom: 2px solid rgb(203, 151, 98);
+  transition:0.7s;
 }
 
+.interview-wrap:hover {
+  border-top: 2px solid rgba(158, 92, 62, 1);
+  border-bottom: 2px solid rgba(158, 92, 62, 1);
+}
 
 .page-title-wrap {
-    margin:auto;
-    margin-top:5%;
-    width:80%;
-    font-family:'Quicksand' ,sans-serif;
-    color: rgb(203,151,98);
-    font-size:1.1rem;
-    transition:1.5s;
+  margin: auto;
+  margin-top: 5%;
+  width: 80%;
+  font-family: "Quicksand", sans-serif;
+  color: rgb(203, 151, 98);
+  font-size: 1.1rem;
+  transition: 1.5s;
 }
 
 .page-title-wrap:hover {
-    color:rgba(158,92,62,1.0);
-    border-radius:8px;
+  color: rgba(158, 92, 62, 1);
+  border-radius: 8px;
 }
 
 .question-wrap {
-    margin: auto;
-    width: 80%;
-    transition:1s;
+  margin: auto;
+  width: 80%;
+  transition: 1s;
 }
 
 .interviewer {
-text-align:left;
-color: rgb(203,151,98);
-font-size:1.7rem;
-font-family:'Quicksand' ,sans-serif;
-transition: 0.7s;
+  text-align: left;
+  color: rgb(203, 151, 98);
+  font-size: 1.7rem;
+  font-family: "Quicksand", sans-serif;
+  transition: 0.7s;
+
+}
+
+.greeting {
+    margin-left: 3%;
 }
 .greeting-link {
-    color: rgb(216, 173, 129);
-    font-size:1.7rem;
-    font-family:'Quicksand' ,sans-serif;
-    transition: 0.7s;
-    text-decoration: underline;
+  color: rgb(216, 173, 129);
+  font-size: 1.7rem;
+  font-family: "Quicksand", sans-serif;
+  transition: 0.7s;
+  text-decoration: underline;
 }
 /* .question-wrap:hover  */
 
-.checkbox{
-display:none;
+.checkbox {
+  display: none;
 }
 
 .interviewer:hover {
-    color:rgba(158,92,62,1.0);
-    border-radius:8px;
+  color: rgba(158, 92, 62, 1);
+  border-radius: 8px;
 }
 
 .me {
-display:none;
-text-align: left;
-color:snow;
-font-size:1.1rem;
-font-family:'Quicksand' sans-serif;
-transition:1s;
+  display: none;
+  text-align: left;
+  color: snow;
+  font-size: 1.1rem;
+  font-family: "Quicksand", sans-serif;
+  transition: 1s;
 }
 
-#toggle-1:checked ~ .me{
-    display:flex;
+#toggle-1:checked ~ .me {
+  display: flex;
 }
-#toggle-2:checked ~ .me{
-    display:flex;
-}
-
-#toggle-3:checked ~ .me{
-    display:flex;
+#toggle-2:checked ~ .me {
+  display: flex;
 }
 
-#toggle-4:checked ~ .me{
-    display:flex;
+#toggle-3:checked ~ .me {
+  display: flex;
 }
 
-#toggle-5:checked ~ .me{
-    display:flex;
+#toggle-4:checked ~ .me {
+  display: flex;
 }
+
+#toggle-5:checked ~ .me {
+  display: flex;
+}
+
+.resume {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin:4% auto;
+    width:85%;
+
+}
+
+.label-wrap {
+    width:25%;
+    border-radius:5%;
+    background-color: rgba(22, 46, 70, 1);
+    width:40%;
+    height:40px;
+    margin:auto;
+    border-top:1px solid rgb(216, 173, 129);
+    border-bottom:1px solid rgb(216, 173, 129);
+transition:0.7s;
+
+}
+.label-wrap:hover {
+    border-top: 1px solid rgba(158, 92, 62, 1);
+    border-bottom: 1px solid rgba(158, 92, 62, 1);
+}
+
+.resume-container{
+    display:flex;
+    flex-direction:row;
+    align-content:center;
+  color: rgba(158, 92, 62, 1);
+  font-size: 1.1rem;
+  font-family: "Quicksand", sans-serif;
+  transition: 1s;
+  min-width:100%;
+}
+
+#resume-toggle:checked ~ .resume-container {
+    display: none;
+}
+
+.resume label {
+    width:40%;
+    height:40px;
+}
+
+.skills-info{
+    width:50%;
+    height:30%;
+    flex-direction:column;
+    justify-content: center;
+}
+.education-info{
+    width:50%;
+    height:30%;
+    flex-direction: column;
+    justify-content: center;
+
+}
+

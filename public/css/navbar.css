@@ -3,43 +3,38 @@ a {
     text-decoration: none;
 }
 .navbar-wrap {
-    position: fixed;
+    position: sticky;
     z-index: 10;
-    display:flex;
+    display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin: auto;
     height: 15%;
     width: 100%;
     top: 0;
-    background:linear-gradient(rgba(255,255,255,0.8) 10%, transparent 20%,rgba(22,46,70,1.0) 28%,black 43%,transparent 98%);
-    border-top-left-radius: 10%;
-    border-top-right-radius: 10%;
+    background:linear-gradient(rgba(22,46,70,1.0) 20%,transparent 90%);
+    border-top: 2px solid rgb(203, 151, 98);
 }
 
 .logo {
-    display:flex;
-    align-items: center;
-    justify-content: flex-end;
-    text-align: center;
-    width: 25%;
-    transform: translateX(20%);
+    display: flex ;
+    align-items: center ;
+    justify-content: left;
+    text-align: center ;
+    width: 33% ;
+    transform: translateX(20%) ;
+    z-index: 25;
 }
 
 .logo h3 {
-    font-family:'Quicksand' ,sans-serif;
-    font-size:1.5rem;
-    background: -webkit-linear-gradient(rgba(22,46,70,1.0) 15%, snow 40%, rgba(22,46,70,1.0) 85%);
-    background-clip:text;
+    font-family:'Quicksand' , sans-serif;
+    font-size: 1.3rem;
+    background: -webkit-linear-gradient(rgba(22,46,70,1.0) 5%, rgb(216, 173, 129) 50%, rgba(22,46,70,1.0) 95%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition:0.3s;
+    transition: 0.3s;
 }
-
-/* .logo-image {
-    position:relative;
-    height:50%;
-    width:15%;
-} */
 
 .nav-ul{
     display:flex;
@@ -47,48 +42,49 @@ a {
     justify-content: space-around;
     list-style: none;
     font-size: 1rem;
-    width: 22%;
+    width: 33%;
 }
 
 .nav-option {
-    position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
     align-items: center;
-    height: 100% ;
+    height: 100%;
     color: rgb(203,151,98);
     width: 100%;
-    font-family:'Quicksand' ,sans-serif;
-
+    font-family:'Quicksand' , sans-serif;
     border: 1px solid transparent;
     transition: 0.6s;
+    transform:translateY(10px);
 }
 
 .nav-option:hover {
-
     color:rgba(158,92,62,1.0);
     border-radius:8px;
+    /* text-decoration: underline; */
+}
+.nav-option:hover .navbar-text{
     text-decoration: underline;
-
 }
 
 .social-media-wrap {
     display:flex;
     flex-direction:row;
-    justify-content: space-evenly;
-    width:25%;
+    justify-content: center;
+    align-content: center;
+    align-items:center;
+    width:33%;
     transition: 0.5s;
-    transform: translateY(-40px);
+
 }
 
 .social-media-wrap img {
     height:35px;
     width:35px;
     border-radius:50%;
-    border:1px solid rgba(255,255,255,0.6);
-    background:rgba(255,255,255, 0.3);
-
+    border: 1px solid rgb(203, 151, 98);
 }
 
 .social-icon {
@@ -96,42 +92,57 @@ a {
     width:35px;
     border-radius:50%;
     border:1px solid rgba(255,255,255,0.6);
-
-
 }
 
 .social-media-wrap a{
-    display:flex;
+    display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    height:100px;
-    transform:translateY(-8px);
-    /* background:rgba(255,255,255, 0.3); */
-    border-bottom-left-radius:50%;
-    border-bottom-right-radius:50%;
-    transition: all 0.2s;
+    justify-content: center;;
+    align-content: center;
+    height: 35px;
+    width: 35px;
+    margin: 10px;
+    transform:translateY(-3px);
+    background: rgba(255,255,255, 0.3);
+    border-radius: 50%;
+    transition: 0.6s;
 }
 
 
 .social-media-wrap a:hover {
     transform: translateY(0px);
 }
+.social-media-wrap a:hover img {
+    border: 1px solid rgba(158,92,62,1.0);
+}
 
 .social-media-wrap a.facebook:hover {
-background:radial-gradient(circle at 50%,rgba(59, 89, 152, 1.0) 15%, snow);
+background:radial-gradient(circle at 50%,rgba(59, 89, 152, 1.0) 2%, transparent);
+
 }  
 .social-media-wrap a.linkedin:hover {
-background: radial-gradient(circle at 50%, rgba(0,119,181,1.0) 15%, snow );
+background: radial-gradient(circle at 50%, rgba(0,119,181,1.0) 2%, transparent );
 } 
 .social-media-wrap a.github:hover {
- background:radial-gradient(circle at 50%,rgba(244, 203, 178, 1.0) 15%, snow);
+ background:radial-gradient(circle at 50%,rgba(244, 203, 178, 1.0) 2%, transparent);
 } 
             
 .social-media-wrap a.instagram:hover {
-background:radial-gradient(circle at 50%,rgba(195, 42, 163,1.0) 15%, snow);
+background:radial-gradient(circle at 50%,rgba(195, 42, 163,1.0) 2%, transparent);
 } 
                 
 .social-media-wrap a.something:hover {
-background:radial-gradient(circle at 50%,rgba(59, 89, 152, 1.0) 15%, snow);
+background:radial-gradient(circle at 50%,rgba(59, 89, 152, 1.0) 2%, transparent);
 
 } 
+
+@media screen and (max-width: 800px) {
+
+    .navbar-wrap{
+        width:100%;
+    }
+    .navbar-text{
+        display:none;
+    }
+
+}

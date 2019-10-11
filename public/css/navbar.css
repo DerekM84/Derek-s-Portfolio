@@ -19,10 +19,11 @@ a {
 
 .logo {
     display: flex;
-    align-items: center;
-    justify-content:  left;
-    text-align: left;
+
+    justify-content:  center;
+    text-align: center;
     min-width: 33%;
+    z-index: inherit;
 }
 
 .logo h3 {
@@ -33,6 +34,7 @@ a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: 0.3s;
+text-align: center;
 }
 
 .nav-ul{
@@ -148,6 +150,7 @@ background:radial-gradient(circle at 50%,rgba(59, 89, 152, 1.0) 2%, transparent)
     .logo h3{
         font-size: 0.7rem;
         text-align:center;
+
 
     }
     .navbar-wrap{

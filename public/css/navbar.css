@@ -2,6 +2,7 @@
 a {
     text-decoration: none;
 }
+
 .navbar-wrap {
     position: sticky;
     z-index: 10;
@@ -17,19 +18,17 @@ a {
 }
 
 .logo {
-    display: flex ;
-    align-items: center ;
-    justify-content: left;
-    text-align: center ;
-    width: 33% ;
-    transform: translateX(20%) ;
-    z-index: 25;
+    display: flex;
+    align-items: center;
+    justify-content:  left;
+    text-align: left;
+    min-width: 33%;
 }
 
 .logo h3 {
     font-family:'Quicksand' , sans-serif;
     font-size: 1.3rem;
-    background: -webkit-linear-gradient(rgba(22,46,70,1.0) 5%, rgb(216, 173, 129) 50%, rgba(22,46,70,1.0) 95%);
+    background: -webkit-linear-gradient(rgba(22,46,70,1.0) 2%, rgb(216, 173, 129) 50%, rgba(22,46,70,1.0) 98%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -39,8 +38,9 @@ a {
 .nav-ul{
     display:flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     list-style: none;
+    margin:auto;
     font-size: 1rem;
     width: 33%;
 }
@@ -138,11 +138,28 @@ background:radial-gradient(circle at 50%,rgba(59, 89, 152, 1.0) 2%, transparent)
 
 @media screen and (max-width: 800px) {
 
+
+    .logo {
+        align-content: center;
+        justify-content: center;
+        text-align:center;
+    }
+
+    .logo h3{
+        font-size: 0.7rem;
+        text-align:center;
+
+    }
     .navbar-wrap{
         width:100%;
     }
     .navbar-text{
         display:none;
     }
+    .nav-option{
+    transform:translateY(0px);
+    font-size:1.5rem;
+    }
+
 
 }

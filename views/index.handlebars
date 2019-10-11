@@ -1,13 +1,18 @@
-
 <div class="greeting-wrap">
         <div class="greeting">
-                <p class="interviewer"> Welcome! </p>
-                <p class="interviewer"> Here you can get to know <a class="greeting-link" href="/QandA"> Derek</a> a little better, and <a class="greeting-link" href="/contact">Reach out</a>.
-                <p class="interviewer">Click a tile below to check out a coding project!</p>
-        
+                <p class="greeting-text"> Welcome! </p>
+                <p class="greeting-text"> Here you can get to know <a class="greeting-link" href="/QandA"> Derek</a> a
+                        little better, and <a class="greeting-link" href="/contact">Reach out</a>.
+                        <p class="greeting-text"> Click a tile below to check out a coding project!</p>
+
         </div>
 </div>
 <div class="navbar-wrap">
+
+        <div class="logo">
+                <h3> DEREK MILLER </h3>
+                {{!-- <img class="logo-image" src="images/worksonmymachine.png" alt="coding-image"> --}}
+        </div>
 
         <div class="social-media-wrap">
 
@@ -37,10 +42,6 @@
                 </a> --}}
 
         </div>
-        <div class="logo">
-                <h3> DEREK MILLER </h3>
-                {{!-- <img class="logo-image" src="images/worksonmymachine.png" alt="coding-image"> --}}
-        </div>
 
         <ul class="nav-ul">
 
@@ -60,9 +61,9 @@
         </ul>
 </div>
 <div class="top-row">
-        
+
         <div class="project-wrap" data-title="Garage-Trader"
-                data-about="The third and final team project for the coding bootcamp. We decided on an app to supplement a community swap event. Created with React, Okta, and MongoDB. This includes Front-end authentication with gated content for registered users. Fully mobile responsive with Flexbox, and proper routing and redirecting with data flow.">
+                data-about="This app was designed to supplement a community swap/barter event. Created with React, Okta, and MongoDB. This includes Front-end authentication with gated content for registered users, a fully mobile responsive design built with Flexbox, and routing and redirecting to accomodate the user experience and data flow.">
 
                 <a target="_blank" href="https://protected-shelf-46012.herokuapp.com/">
                         <div class="outer-layer">
@@ -81,8 +82,40 @@
                         </div>
                 </a>
         </div>
+
+        <div class="mobile-project-wrap" data-title="Garage-Trader"
+                data-about="This app was designed to supplement a community swap/barter event. Created with React, Okta, and MongoDB. This includes Front-end authentication with gated content for registered users, a fully mobile responsive design built with Flexbox, and routing and redirecting to accomodate the user experience and data flow.">
+
+
+                <input class="checkbox" type="checkbox" id="project-1">
+                <label for="project-1" class="interviewer">
+                        <div class="mobile-outer-layer">
+
+                                <div class="mobile-inner-layer">
+                                        <img class="mobile-thumbnail" src="images/box3.png" alt="thumbnail">
+                                </div>
+
+                                <div class="mobile-project-text">
+
+                                        <h2 class="mobile-project-h2">
+                                                Garage Trader
+                                        </h2>
+                                </div>
+                        </div>
+                </label>
+                <div class="mobile-project-p">
+                        <a class="mobile-app-link" href="https://protected-shelf-46012.herokuapp.com/"
+                                target="_blank">VIEW HERE</a>
+                        <p>This app was designed to supplement a community swap/barter event. Created with React, Okta,
+                                and MongoDB. This includes Front-end authentication with gated content for registered
+                                users, a fully mobile responsive design built with Flexbox, and routing and redirecting
+                                to accomodate the user experience and data flow.</p>
+                </div>
+
+        </div>
+
         <div class="project-wrap" data-title="Food-Dex"
-                data-about="The second group project, we use a Pinterest-like format and include all technologies learned so far. This was about creating a professional appearance along with a familiar user-based experience. The significant thing about this project would be the use of AWS S3 services to help store images and return short-stringed URL's to help our database storage efficiency. We also ran a handlebar view system and array mapped the data to create display items.">
+                data-about="This coding project was a run through to include all technologies learned so far. This was about creating a professional appearance along with a familiar user-based experience. The significant thing about this project would be the use of AWS S3 services to help store images and return short-stringed URL's to help our database storage efficiency. We also ran a handlebar view system and array mapped the data to create display items.">
 
                 <a target="_blank" href="https://fooddex.herokuapp.com/">
                         <div class="outer-layer">
@@ -100,6 +133,31 @@
                                 </div>
                         </div>
                 </a>
+        </div>
+        <div class="mobile-project-wrap" data-title="Food-Dex"
+                data-about="The significant thing about this coding project would be the use of AWS S3 services to help store images and return short-stringed URL's to help our database storage efficiency. It also runs a handlebar view system, and array maps the data in order to create display items.">
+
+                <input class="checkbox" type="checkbox" id="project-2">
+                <label for="project-2" class="interviewer">
+                        <div class="mobile-outer-layer">
+
+                                <div class="mobile-inner-layer">
+                                        <img class="mobile-thumbnail" src="images/cornucopia.jpeg" alt="thumbnail">
+                                </div>
+                                <div class="mobile-project-text">
+                                        <h2 class="project-h2">
+                                                Food Dex
+                                        </h2>
+                                </div>
+                        </div>
+                </label>
+                <div class="mobile-project-p">
+                        <a class="mobile-app-link" href="https://fooddex.herokuapp.com/" target="_blank">VIEW HERE</a>
+                        <p>The significant thing about this coding project would be the use of AWS S3 services
+                                to help store images and return short-stringed URL's to help our database storage
+                                efficiency. It also runs a handlebar view system, and array maps the data in order to
+                                create display items.</p>
+                </div>
         </div>
 
         {{!-- <div class="project-wrap" data-title="Devour It"
@@ -124,11 +182,10 @@
         </div> --}}
 
         <div class="project-wrap" data-title="React Memory"
-                data-about="In the first couple days of learning React, I created this game to successfully launch a react app. This involves creating functional and stateful components, mapping JSON arrays and creating clickable items with the data. The point was to pass props into each tile and give them on-click methods from javascript written inside of the JSX format. The game itself is a mini mobile-responsive memory test game. ">
+                data-about="Implementing some of React's core concepts here. This involves creating functional and stateful components, mapping JSON arrays and creating clickable items with the data. The point was to pass props into each tile and give them on-click methods from javascript written inside of the JSX format. The game itself is a mobile-responsive memory test game.">
 
                 <a target="_blank" href="https://shielded-scrubland-36989.herokuapp.com/">
-                        <div class="outer-layer">
-
+                        <div class="mobile-outer-layer">
                                 <div class="inner-layer">
                                         <img class="thumbnail" src="images/react-logo.png" alt="thumbnail">
                                 </div>
@@ -143,9 +200,31 @@
                         </div>
                 </a>
         </div>
+        <div class="mobile-project-wrap" data-title="React Memory"
+                data-about="Implementing some of React's core concepts here. This involves creating functional and stateful components, mapping JSON arrays and creating clickable items with the data. The point was to pass props into each tile and give them on-click methods from javascript written inside of the JSX format. The game itself is a mobile-responsive memory test game.">
+
+               <input class="checkbox" type="checkbox" id="project-3">
+                <label for="project-3" class="interviewer">
+                        <div class="mobile-outer-layer">
+
+                                <div class="mobile-inner-layer">
+                                        <img class="mobile-thumbnail" src="images/react-logo.png" alt="thumbnail">
+                                </div>
+                                <div class="mobile-project-text">
+                                        <h2 class="mobile-project-h2">
+                                                React-Memory
+                                        </h2>
+                                </div>
+                        </div>
+</label>
+                <div class="mobile-project-p">
+                        <a class="mobile-app-link" href="https://shielded-scrubland-36989.herokuapp.com/" target="_blank">VIEW HERE</a>
+                        <p>Implementing some of React's core concepts here. This involves creating functional and stateful components, mapping JSON arrays and creating clickable items with the data. The point was to pass props into each tile and give them on-click methods from javascript written inside of the JSX format. The game itself is a mobile-responsive memory test game.</p>
+                </div>
+        </div>
 
         <div class="project-wrap" data-title="Fast Friends"
-                data-about="Moving forward in the bootcamp, I am now deploying full stack Node.js & Express based applications. This one in particular is meant to resemble a networking theme. Along with a survey mechanic, we can create and store user profiles. It will compare your survey answers with a javascript formula/function and then display your most compatible match afterwards.">
+                data-about="This is the first deployment of a full stack Node.js & Express based application. It's meant to resemble a networking theme because practicing concepts like these is transferrable to so many popular websites in modern internet browsing. Along with a survey mechanic, we can create and store user profiles. Then, it will compare your survey answers with a javascript formula/function and  display your most compatible match afterwards.">
 
                 <a target="_blank" href="https://fast-ocean-46834.herokuapp.com/">
                         <div class="outer-layer">
@@ -164,9 +243,32 @@
                         </div>
                 </a>
         </div>
+        <div class="mobile-project-wrap" data-title="Fast Friends"
+                data-about="This is the first deployment of a full stack Node.js & Express based application. It's meant to resemble a networking theme because practicing concepts like these is transferrable to so many popular websites in modern internet browsing. Along with a survey mechanic, we can create and store user profiles. Then, it will compare your survey answers with a javascript formula/function and  display your most compatible match afterwards.">
+
+                <input class="checkbox" type="checkbox" id="project-4">
+                <label for="project-4" class="interviewer">
+                        <div class="mobile-outer-layer">
+
+                                <div class="mobile-inner-layer">
+                                        <img class="mobile-thumbnail" src="images/social-network-image.png"
+                                                alt="thumbnail">
+                                </div>
+                                <div class="mobile-project-text">
+                                        <h2 class="mobile-project-h2">
+                                                Fast Friends
+                                        </h2>
+                                </div>
+                        </div>
+               </label>
+                <div class="mobile-project-p">
+                        <a class="mobile-app-link" href="https://fast-ocean-46834.herokuapp.com/" target="_blank">VIEW HERE</a>
+                        <p>This is the first deployment of a full stack Node.js & Express based application. It's meant to resemble a networking theme because practicing concepts like these is transferrable to so many popular websites in modern internet browsing. Along with a survey mechanic, we can create and store user profiles. Then, it will compare your survey answers with a javascript formula/function and  display your most compatible match afterwards. </p>
+                </div>
+        </div>
 
         <div class="project-wrap" data-title="National Parks Data"
-                data-about="In the first group project of our curriculum, we decided that outdoor adventuring had a gap during preparation. We decided to bring together relative information all into one simplistic user experience. This site grants the ability to learn about every national park located in the state of their choice and also provides the current weather forecast and links provide directions and official websites as well.">
+                data-about="National Parks Data was created to demonstrate the use of external API calling, and not just one. There are 2 different API's that respond with unique sets of data. The idea was to create a user-friendly site which creates a unique format to show nearby park details and also their current weather status all in one location with a uniform custom design.">
 
                 <a target="_blank" href="https://dthayer16.github.io/National-Park-Data-Project/">
                         <div class="outer-layer">
@@ -185,9 +287,31 @@
                         </div>
                 </a>
         </div>
+        <div class="mobile-project-wrap" data-title="National Parks Data"
+                data-about="National Parks Data was created to demonstrate the use of external API calling, and not just one. There are 2 different API's that respond with unique sets of data. The idea was to create a user-friendly site which creates a unique format to show nearby park details and also their current weather status all in one location with a uniform custom design." >
+
+               <input class="checkbox" type="checkbox" id="project-5">
+                <label for="project-5" class="interviewer">
+                        <div class="mobile-outer-layer">
+
+                                <div class="mobile-inner-layer">
+                                        <img class="mobile-thumbnail" src="images/bearpic.jpeg" alt="thumbnail">
+                                </div>
+                                <div class="mobile-project-text">
+                                        <h2 class="mobile-project-h2">
+                                                National Parks Data
+                                        </h2>
+                                </div>
+                        </div>
+                          </label>
+                <div class="mobile-project-p">
+                        <a class="mobile-app-link" href="https://dthayer16.github.io/National-Park-Data-Project/" target="_blank" >VIEW HERE</a>
+                        <p> National Parks Data was created to demonstrate the use of external API calling, and not just one. There are 2 different API's that respond with unique sets of data. The idea was to create a user-friendly site which creates a unique format to show nearby park details and also their current weather status all in one location with a uniform custom design.</p>
+                </div>
+        </div>
 
         <div class="project-wrap" data-title="Gif-Grab"
-                data-about="Super easy access to topic-specific gifs. Allowing the user to create their own HTML button and use it to request gifs for the category that they chose!">
+                data-about="Super easy access to specific gifs. The magic button allows the user to create their own HTML button and use it to instantly retrieve pausable gifs for whatever they desire!">
 
                 <a target="_blank" href="https://derekm84.github.io/GifTastic/">
                         <div class="outer-layer">
@@ -204,6 +328,28 @@
                                 </div>
                         </div>
                 </a>
+        </div>
+        <div class="mobile-project-wrap" data-title="Gif-Grab"
+                data-about="Super easy access to specific gifs. The magic button allows the user to create their own HTML button and use it to instantly retrieve pausable gifs for whatever they desire!">
+
+                <input class="checkbox" type="checkbox" id="project-6">
+                <label for="project-6" class="interviewer">
+                        <div class="mobile-outer-layer">
+                                <div class="mobile-inner-layer">
+                                        <img class="mobile-thumbnail" src="images/catlol.jpg" alt="thumbnail">
+                                </div>
+                                <div class="mobile-project-text">
+                                        <h2 class="mobile-project-h2">
+                                                Gif-Grab
+                                        </h2>
+                                
+                                </div>
+                        </div>
+                </label>
+                <div class="mobile-project-p">
+                        <a class="mobile-app-link" href="https://derekm84.github.io/GifTastic/" target="_blank" >VIEW HERE</a>
+                        <p> Super easy access to specific gifs. The magic button allows the user to create their own HTML button and use it to instantly retrieve pausable gifs for whatever they desire! </p>
+                </div>
         </div>
         <div class="project-wrap" data-title="Next Train"
                 data-about="Combining timing formulas with a firebase database give us the ability to keep track of multiple train routes and schedules. After a route is added, the app can be accessed again from anywhere to keep an eye on however many minutes are left until that next arrival.">
@@ -223,6 +369,28 @@
                                 </div>
                         </div>
                 </a>
+        </div>
+        <div class="mobile-project-wrap" data-title="Next Train"
+                data-about="Combining timing formulas with a firebase database give us the ability to keep track of multiple train routes and schedules. After a route is added, the app can be accessed again from anywhere to keep an eye on however many minutes are left until that next arrival." >
+                <input class="checkbox" type="checkbox" id="project-7">
+                <label for="project-7" class="interviewer">
+                        <div class="mobile-outer-layer">
+                                <div class="mobile-inner-layer">
+                                        <img class="mobile-thumbnail" src="images/trainclock.jpeg" alt="thumbnail">
+
+                                </div>
+                                <div class="mobile-project-text">
+                                        <h2 class="mobile-project-h2">
+                                                Next Train
+                                        </h2>
+                                
+                                </div>
+                        </div>
+                </label>
+                <div class="mobile-project-p">
+                        <a class="mobile-app-link" href="https://derekm84.github.io/Train-Scheduler/" target="_blank" >VIEW HERE</a>
+                        <p> Combining timing formulas with a firebase database give us the ability to keep track of multiple train routes and schedules. After a route is added, the app can be accessed again from anywhere to keep an eye on however many minutes are left until that next arrival. </p>
+                </div>
         </div>
         {{!-- <div class="project-wrap" data-title="Sorta Psychic"
                 data-about="A game based around tracking keystrokes, events, and transferring data through arrays. If you think you know what the mystery letter is, hit that key and see. You may be sorta psychic...">
@@ -265,7 +433,7 @@
                 </a>
         </div> --}}
         <div class="project-wrap" data-title="Gem Loot Split"
-                data-about="The only remaining survivors of the expedition both want their fair share. This is done by assigning each gem a market-fetch price and then sorting them into piles that will sell for an accurate value.">
+                data-about="Early development! Practice with a static HTML page, custom CSS, and javascript functions. Small-scale projects like this are the stepping stones to greater understanding of the languages and problem-solving experience.">
                 <a target="_blank" href="https://derekm84.github.io/unit-4-game/">
                         <div class="outer-layer">
                                 <div class="inner-layer">
@@ -282,19 +450,42 @@
                                 </div>
                         </div>
 
-        </a>  
+                </a>
+        </div>
+        <div class="mobile-project-wrap" data-title="Gem Loot Split"
+                data-about="Early development! Practice with a static HTML page, custom CSS, and javascript functions. Small-scale projects like this are the stepping stones to greater understanding of the languages and problem-solving experience." >
+
+                <input class="checkbox" type="checkbox" id="project-8">
+                <label for="project-8" class="interviewer">
+
+                        <div class="mobile-outer-layer">
+                                <div class="mobile-inner-layer">
+                                        <img class="mobile-thumbnail" src="images/gem.png" alt="thumbnail">
+                                </div>
+                                <div class="mobile-project-text">
+                                        <h2 class="mobile-project-h2">
+                                                Gem Loot Split
+                                        </h2>
+                                </div>
+                        </div>
+                </label>
+                <div class="mobile-project-p">
+                        <a class="mobile-app-link" href="https://derekm84.github.io/unit-4-game/" target="_blank" >VIEW HERE</a>
+
+                        <p> Early development! Practice with a static HTML page, custom CSS, and javascript functions. Small-scale projects like this are the stepping stones to greater understanding of the languages and problem-solving experience. </p>
+                </div>
         </div>
 
-       
+
 </div>
 </div>
 <div class="bottom-row">
         <div class="display-wrap">
                 <div class="display">
-                        <h3> - Move To A Project To See Details -
+                        <h3> Hover Over A Project To See Details!
                         </h3>
                         <br>
-                        <h3> - Click To Open In A Separate Window -
+                        <h3> Click One To View the App!
                         </h3>
                 </div>
         </div>

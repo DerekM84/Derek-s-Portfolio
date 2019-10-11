@@ -101,3 +101,28 @@ hr {
     color:rgba(22,46,70,1.0);
     border-radius: 10%;
 }
+
+@media screen and (max-width:800px) {
+
+
+    .contact-top-row {
+    flex-direction: column;
+    justify-content: center;
+    }
+
+    .profile-pic-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45% ;
+        margin: 5% auto;
+    }
+    .contact-display-wrap {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin:5% auto;
+    }
+
+}

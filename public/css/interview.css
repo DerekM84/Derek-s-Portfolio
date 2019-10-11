@@ -38,11 +38,11 @@
 }
 
 .interviewer {
-  text-align: left;
-  color: rgb(203, 151, 98);
-  font-size: 1.7rem;
-  font-family: "Quicksand", sans-serif;
-  transition: 0.7s;
+  text-align: left ;
+  color: rgb(203, 151, 98) ;
+  font-size: 1.7rem ;
+  font-family: "Quicksand", sans-serif ;
+  transition: 0.7s ;
 
 }
 
@@ -106,15 +106,15 @@
 }
 
 .label-wrap {
-    width:25%;
     border-radius:5%;
     background-color: rgba(22, 46, 70, 1);
-    width:40%;
-    height:40px;
-    margin:auto;
+    width: 40%;
+    height: 40px;
+    margin: auto;
     border-top:1px solid rgb(216, 173, 129);
     border-bottom:1px solid rgb(216, 173, 129);
-transition:0.7s;
+    transition:0.7s;
+    align-items:center;
 
 }
 .label-wrap:hover {
@@ -138,8 +138,8 @@ transition:0.7s;
 }
 
 .resume label {
-    width:40%;
-    height:40px;
+    width: 40%;
+    height: 40px;
 }
 
 .skills-info{
@@ -154,5 +154,53 @@ transition:0.7s;
     flex-direction: column;
     justify-content: center;
 
+}
+
+@media screen and (max-width: 800px) {
+
+  .greeting-link {
+    color: rgb(216, 173, 129);
+    font-size: 1.1rem;
+    font-family: "Quicksand", sans-serif;
+    transition: 0.7s;
+    text-decoration: underline;
+  }
+  .page-title-wrap {
+    margin: auto;
+    margin-top: 5%;
+    width: 100%;
+    font-family: "Quicksand", sans-serif;
+    color: rgb(203, 151, 98);
+    font-size: 0.7rem;
+
+  }
+  .question-wrap {
+  margin: 5% auto;
+  width: 93%;
+  transition: 0.5s;
+  }
+  .interviewer {
+    text-align: left ;
+    color: rgb(203, 151, 98) ;
+    font-size: 1.3rem ;
+    font-family: "Quicksand", sans-serif ;
+    transition: 0.7s ;
+  
+  }
+
+  .label-wrap {
+    width: 90%;
+    justify-content: center;
+    text-align: center;
+    
+}
+.resume-container {
+  
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+}
+
+  
 }
 
